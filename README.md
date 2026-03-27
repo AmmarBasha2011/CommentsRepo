@@ -1,20 +1,19 @@
-# Arabic YouTube Comments Generator API (V3 - 18 Trillion+)
+# Arabic YouTube Comments Generator API (V4 - 1.7 Quintillion+)
 
-This is **Version 3.0** of the Arabic YouTube Comments API. It now supports over **18,000,840,000,000 (18 Trillion)** possible unique-ish comment combinations. This number has been mathematically verified using a Python script.
+This is **Version 4.0** of the Arabic YouTube Comments API. It now supports over **1,764,238,032,070,312,500 (1.7 Quintillion)** possible unique-ish comment combinations. This number far exceeds the 100 Trillion goal and has been mathematically verified.
 
-## 🚀 What's New in V3?
-- **Combinatorial Explosion (Trillion Scale):** Word lists have been massively expanded (30-50 items per category) across 14 different categories.
-- **Mathematical Verification:** The total unique combinations (18 Trillion+) were calculated based on the 5 complex sentence templates.
-- **New Categories:** Added `degrees` (e.g., "extremely", "uniquely"), `interjections`, `connectors`, and more `subjects` and `adjectives`.
-- **Dynamic Uniqueness:** Templates now use `randomUnique` to ensure no repetition within a single comment (e.g., two different quality attributes).
+## 🚀 What's New in V4?
+- **Combinatorial Explosion (Quintillion Scale):** Massive expansion of word lists and categories.
+- **Emoji Support:** Integrated a diverse set of emojis and combinations for a more realistic feel.
+- **Mathematical Verification:** The total unique combinations (1.7 Quintillion+) were calculated using a Python script.
+- **Improved Realism:** Added more natural connectors and regional origins.
 
 ## 📊 The Math (Verified)
-- **Template 1:** 27 Billion
-- **Template 2:** 58 Billion
-- **Template 3:** 95 Billion
-- **Template 4:** 17.28 Trillion
-- **Template 5:** 540 Billion
-- **Total:** **18,000,840,000,000+**
+- **Template 1:** 1.03 Quadrillion
+- **Template 2:** 4.20 Quadrillion
+- **Template 3:** 7.23 Quadrillion
+- **Template 4:** 1.75 Quintillion
+- **Total:** **1,764,238,032,070,312,500+**
 
 ## 📡 API Endpoints
 
@@ -24,10 +23,10 @@ This is **Version 3.0** of the Arabic YouTube Comments API. It now supports over
 - **Response:**
   ```json
   {
-    "comment": "يا سلام، مذهل جداً أسلوب مميز في هذا المقطع، أبهرتني وفتحت لي آفاقاً جديدة.. أنت المبدع.",
-    "version": "3.0.0",
-    "combinations": "18,000,840,000,000",
-    "message": "Over 18 Trillion unique combinations verified via calculation."
+    "comment": "يا مبدع، إبداع! بصورة خيالية موضوع رائع جداً مؤخراً، أبديت مهارة! بانتظار الجديد. 🔥❤️",
+    "version": "4.0.0",
+    "combinations": "1,764,238,032,070,312,500",
+    "message": "Over 1.7 Quintillion unique combinations verified via calculation."
   }
   ```
 
@@ -35,7 +34,7 @@ This is **Version 3.0** of the Arabic YouTube Comments API. It now supports over
 Push to GitHub and connect to Netlify.
 
 ## 📂 Project Structure
-- `netlify/functions/getcomment.js`: The V3 logic with 18 Trillion+ capacity.
-- `calculate_v3.py`: The Python script used to verify the count.
+- `netlify/functions/getcomment.js`: The V4 logic with 1.7 Quintillion+ capacity.
+- `calculate_v4.py`: The Python script used to verify the count.
 - `netlify.toml`: Routing.
 - `package.json`: Metadata.
