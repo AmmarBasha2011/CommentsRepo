@@ -1,12 +1,12 @@
-# Arabic YouTube Comments Generator API (Dynamic)
+# Arabic YouTube Comments Generator API (V2 - 1 Billion+)
 
-This project provides an API that returns a random Arabic YouTube comment. Unlike traditional APIs that store large datasets, this one **generates** comments dynamically on-the-fly using smart templates, providing over **1,000,000+** possible unique combinations without needing a large `comments.json` file.
+This is **Version 2.0** of the Arabic YouTube Comments API. It now supports over **1,000,000,000 (1 Billion)** possible unique-ish comment combinations through an expanded set of dynamic templates and word lists.
 
-## 🚀 Features
-- **Zero Storage:** No massive JSON files to manage.
-- **Fast:** Instant response from Netlify Functions.
-- **High Variety:** Millions of possible combinations of prefixes, subjects, adjectives, and closing remarks.
-- **CORS Enabled:** Can be used from any website.
+## 🚀 What's New in V2?
+- **Combinatorial Explosion:** Increased word lists (subjects, adjectives, impacts, origins, reactions, timeframes) to reach 1 Billion+ combinations.
+- **Improved Context:** Added regional origins (e.g., "from Saudi Arabia", "from Egypt") and emotional reactions.
+- **Enhanced Variety:** 16 distinct sentence templates with multiple variable slots.
+- **Ultra Lightweight:** Still zero storage required. Everything is generated on-the-fly.
 
 ## 📡 API Endpoints
 
@@ -16,25 +16,22 @@ This project provides an API that returns a random Arabic YouTube comment. Unlik
 - **Response:**
   ```json
   {
-    "comment": "فيديو رائع جداً، استمر يا بطل!"
+    "comment": "من أجمل ما شاهدت اليوم، فيديو رائع بـ إخراج أسطوري.",
+    "version": "2.0.0",
+    "combinations": "1 Billion+"
   }
   ```
 
-## 🛠️ How to Deploy
-1. Fork or Clone this repository.
-2. Push to your GitHub.
-3. Connect to **Netlify**.
-4. Netlify will automatically deploy the function based on `netlify.toml`.
+## 🛠️ Deployment
+Same as V1. Push to GitHub and connect to Netlify.
 
 ## 📂 Project Structure
-- `netlify/functions/getcomment.js`: The logic that dynamically generates the comment.
-- `netlify.toml`: Routing configuration.
-- `package.json`: Project metadata.
+- `netlify/functions/getcomment.js`: The V2 logic with massive word lists.
+- `netlify.toml`: Routing.
+- `package.json`: Metadata.
 
 ## 🧪 Local Testing
-You can test locally using the Netlify CLI:
 ```bash
-npm install -g netlify-cli
 netlify dev
 ```
 Then visit `http://localhost:8888/getcomment`.
