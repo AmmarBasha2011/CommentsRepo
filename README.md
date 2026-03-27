@@ -1,12 +1,20 @@
-# Arabic YouTube Comments Generator API (V2 - 1 Billion+)
+# Arabic YouTube Comments Generator API (V3 - 18 Trillion+)
 
-This is **Version 2.0** of the Arabic YouTube Comments API. It now supports over **1,000,000,000 (1 Billion)** possible unique-ish comment combinations through an expanded set of dynamic templates and word lists.
+This is **Version 3.0** of the Arabic YouTube Comments API. It now supports over **18,000,840,000,000 (18 Trillion)** possible unique-ish comment combinations. This number has been mathematically verified using a Python script.
 
-## 🚀 What's New in V2?
-- **Combinatorial Explosion:** Increased word lists (subjects, adjectives, impacts, origins, reactions, timeframes) to reach 1 Billion+ combinations.
-- **Improved Context:** Added regional origins (e.g., "from Saudi Arabia", "from Egypt") and emotional reactions.
-- **Enhanced Variety:** 16 distinct sentence templates with multiple variable slots.
-- **Ultra Lightweight:** Still zero storage required. Everything is generated on-the-fly.
+## 🚀 What's New in V3?
+- **Combinatorial Explosion (Trillion Scale):** Word lists have been massively expanded (30-50 items per category) across 14 different categories.
+- **Mathematical Verification:** The total unique combinations (18 Trillion+) were calculated based on the 5 complex sentence templates.
+- **New Categories:** Added `degrees` (e.g., "extremely", "uniquely"), `interjections`, `connectors`, and more `subjects` and `adjectives`.
+- **Dynamic Uniqueness:** Templates now use `randomUnique` to ensure no repetition within a single comment (e.g., two different quality attributes).
+
+## 📊 The Math (Verified)
+- **Template 1:** 27 Billion
+- **Template 2:** 58 Billion
+- **Template 3:** 95 Billion
+- **Template 4:** 17.28 Trillion
+- **Template 5:** 540 Billion
+- **Total:** **18,000,840,000,000+**
 
 ## 📡 API Endpoints
 
@@ -16,22 +24,18 @@ This is **Version 2.0** of the Arabic YouTube Comments API. It now supports over
 - **Response:**
   ```json
   {
-    "comment": "من أجمل ما شاهدت اليوم، فيديو رائع بـ إخراج أسطوري.",
-    "version": "2.0.0",
-    "combinations": "1 Billion+"
+    "comment": "يا سلام، مذهل جداً أسلوب مميز في هذا المقطع، أبهرتني وفتحت لي آفاقاً جديدة.. أنت المبدع.",
+    "version": "3.0.0",
+    "combinations": "18,000,840,000,000",
+    "message": "Over 18 Trillion unique combinations verified via calculation."
   }
   ```
 
 ## 🛠️ Deployment
-Same as V1. Push to GitHub and connect to Netlify.
+Push to GitHub and connect to Netlify.
 
 ## 📂 Project Structure
-- `netlify/functions/getcomment.js`: The V2 logic with massive word lists.
+- `netlify/functions/getcomment.js`: The V3 logic with 18 Trillion+ capacity.
+- `calculate_v3.py`: The Python script used to verify the count.
 - `netlify.toml`: Routing.
 - `package.json`: Metadata.
-
-## 🧪 Local Testing
-```bash
-netlify dev
-```
-Then visit `http://localhost:8888/getcomment`.
